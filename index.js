@@ -25,17 +25,17 @@ let quote;
 function nextQuote() {
     const color = colors[Math.floor(Math.random() * colors.length)];
     quote = quotes[Math.floor(Math.random() * quotes.length)]
-    $('.quote-text').animate({opacity:0}, 500, 'linear', ()=>{
+    $('#quote-text').animate({opacity:0}, 500, 'linear', ()=>{
         $('#text').html(quote.text);
-        $('.quote-text').animate({opacity:1}, 500);
+        $('#quote-text').animate({opacity:1, color: color}, 500);
     });
-    $('.quote-author').animate({opacity:0}, 500, 'linear', ()=>{
+    $('#quote-author').animate({opacity:0, color: color}, 500, 'linear', ()=>{
         $('#author').html(quote.author);
-        $('.quote-author').animate({opacity:1}, 500);
+        $('#quote-author').animate({opacity:1}, 500);
     });
     $('body').animate({backgroundColor: color, color: color}, 1000);
-    $('#twitter').animate({backgroundColor: color}, 1000);
-    $('#tumblr').animate({backgroundColor: color}, 1000);
+    $('#tweet-quote').animate({backgroundColor: color}, 1000);
+    $('#tumblr-quote').animate({backgroundColor: color}, 1000);
     $('#new-quote').animate({backgroundColor: color}, 1000);
 }
 

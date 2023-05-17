@@ -16,23 +16,30 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <div class="wrapper">
-      <div class="quote-box">
-        <p class="quote-text">
-          <i class="fa fa-quote-left"></i>
-          <span id="text"></span>
-        </p>
-        <p class="quote-author">- <span id="author"></span></p>
-        <div class="button-row">
-          <a class="button" id="twitter"><i class="fa fa-twitter"></i></a>
-          <a class="button" id="tumblr"><i class="fa fa-tumblr"></i></a>
-          <a class="button" id="new-quote">new quote</a>
+    <div id="wrapper">
+      <div id="quote-box">
+        <div id="quote-text">
+          <i class="fa fa-quote-left" id="quote"></i>
+          <span id="text"
+            >Xi Jinping is watching you Xi Jinping is watching you Xi Jinping is
+            watching you</span
+          >
+        </div>
+        <div id="quote-author">- <span id="author">XJP</span></div>
+        <div class="buttons">
+          <a href="twitter.com/intent/tweet" class="button" id="tweet-quote"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="#" class="button" id="tumblr-quote"
+            ><i class="fa fa-tumblr"></i
+          ></a>
+          <button id="new-quote">new quote</button>
         </div>
       </div>
-      <p class="footer">by Zhuolin Fu</p>
+      <div id="footer">by Zhuolin Fu</div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
